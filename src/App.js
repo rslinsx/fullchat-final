@@ -1,9 +1,10 @@
 import './App.css';
 import { useEffect, useState } from 'react';
-import MainScren from './components/MainScren';
-import Navbar from './components/Navbarr';
-import HomeHome from './components/HomeHome';
-import LoginForm from './components/LoginForm';
+import MainScren from './components/layout/MainScren';
+import Navbar from './components/layout/Navbar';
+import HomeHome from './components/layout/HomeHome';
+import LoginForm from './components/layout/LoginForm';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 
 function App() {
 
@@ -13,6 +14,10 @@ function App() {
   const [estaLogado, setEstaLogado] = useState(JSON.parse(localStorage.getItem('key')));
   const [socketUnic, setSocketUnic] = useState(null);
   const [listDeConversas, setListDeConversas] = useState(null);
+
+  function logOut(){
+    localStorage.setItem('key', false);
+  };
 
 
 
