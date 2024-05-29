@@ -1,0 +1,13 @@
+#image {
+    background-image: url(../../pexels-igor-dedik-10638623.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+#eyePassword:hover {
+    cursor: pointer;
+    background-color: bisque;
+}

@@ -1,7 +1,9 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 import MainScren from './components/MainScren';
-
+import Navbar from './components/Navbarr';
+import HomeHome from './components/HomeHome';
+import LoginForm from './components/LoginForm';
 
 function App() {
 
@@ -17,7 +19,16 @@ function App() {
   return (
     <div className="App">
       <MainScren>
-          <h1>Hello World!</h1>
+        <Router>
+          {estaLogado && <Navbar sair={logOut}/>}
+          <Routes>
+            <Route path='/' element={ estaLogado ? <HomeHome/> : <Navigate to="/login"/> }/>
+
+            <Route path="/login" element={estaLogado ? <Navigate to="/"/> : <LoginForm/>}/>
+
+          </Routes>
+
+        </Router>  
 
       </MainScren>
 
