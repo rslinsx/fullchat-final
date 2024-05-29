@@ -1,0 +1,96 @@
+.allScrenMessage {
+    height: 90vh;
+    display: flex;
+    flex-direction:row;
+}
+
+
+.conversaUnica {
+    cursor: pointer;    
+    background-color: #212529;
+}
+
+.conversaClicadaNoMomento {
+    border: 2px solid green;
+}
+
+
+
+.telaDeConversas {
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.telaComMensagens {
+    background-color: whitesmoke;
+    height: 80vh;
+    overflow-y: scroll;
+    overflow-x: initial;
+}
+
+.mensagemEnviada {          
+    word-wrap: break-word;
+    width: 40%;
+    background-color: #212529;
+    max-width: max-content;
+    min-width: 3%;
+    margin-left: auto;
+    border-radius: 10px;
+
+}
+
+.mensagemRecebida {
+    word-wrap: break-word;
+    background-color: #4095D1;
+    width: 40%;
+    max-width: max-content;
+    border-radius: 10px;
+}
+
+.mensagemQueRecebiNova {
+    background-color: #4095D1;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.mensagemQueEnvieiNova { 
+    background-color: #000000;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.overflowp {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    max-height: 5vh;
+}
+
+
+.campoDeDigitacao input {
+    width: 60vw;
+    height: 8vh;
+    border: none;
+    border-radius: 15px;
+    background-color: whitesmoke;
+    overflow-y: scroll;
+    overflow-x: initial;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    border: 1px solid #4095D1;
+}
+
+.campoDeDigitacao input:focus{
+    outline: none;
+}
+
+
+#textextscren{
+    background-image: url(../../pexels-pixabay-315938.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
