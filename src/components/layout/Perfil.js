@@ -9,7 +9,7 @@ function Perfil() {
   const [ultimoNomePerfil, setUltimoNomePerfil] = useState('');
 
   function carregarInfosDoPerfil(){
-    fetch('http://localhost:8081/perfil', {
+    fetch('https://apifullchat-production.up.railway.app/perfil', {
       method: 'POST',
       headers: {
         'Content-Type' : 'application/json',

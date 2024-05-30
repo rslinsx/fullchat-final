@@ -13,7 +13,7 @@ function Register(){
     const [mostrarSenha, setMostrarSenha] = useState(false);
 
     function cadastrarNovoUsuario(){
-        fetch('http://localhost:8081/registro', {
+        fetch('https://apifullchat-production.up.railway.app/registro', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

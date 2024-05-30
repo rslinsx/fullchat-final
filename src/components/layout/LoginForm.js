@@ -27,7 +27,7 @@ function LoginForm(){
 
     function loginEnviar(){
 
-        fetch('http://localhost:8081/login', {
+        fetch('https://apifullchat-production.up.railway.app/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

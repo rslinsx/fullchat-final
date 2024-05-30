@@ -28,7 +28,7 @@ function Crm({socket}){
 
         if (emailProcurado !== '') {
 
-        fetch('http://localhost:8081/crm/procurar', {
+        fetch('https://apifullchat-production.up.railway.app/crm/procurar', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -57,7 +57,7 @@ function Crm({socket}){
 
         if (emailProcuradoCrm !== '') {
 
-        fetch('http://localhost:8081/crm/procurarcontato', {
+        fetch('https://apifullchat-production.up.railway.app/crm/procurarcontato', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -87,7 +87,7 @@ function Crm({socket}){
 
 
     function incluirContatoCrm() {
-        fetch('http://localhost:8081/crm/cadastrar', {
+        fetch('https://apifullchat-production.up.railway.app/crm/cadastrar', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -113,7 +113,7 @@ function Crm({socket}){
 };
 
      function carregarContatos(){
-        fetch('http://localhost:8081/crm/contatos', {
+        fetch('https://apifullchat-production.up.railway.app/crm/contatos', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
